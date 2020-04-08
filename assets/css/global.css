@@ -113,6 +113,7 @@ section {
 .section__title {
     font-size: 2.8em;
     font-weight: 800;
+    text-transform: capitalize;
 }
 
 .section__title--primary {
@@ -458,6 +459,82 @@ section {
 .about__button {
     margin-left: 18px;
     margin-top: 10px;
+}
+
+/* Contact Section */
+
+.contact__content {
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+.contact__column {
+    padding: 0 64px;
+}
+
+.contact__card {
+    padding: 30px 20px 50px 20px !important;
+}
+
+form {
+    padding: 3px 26px;
+}
+
+.form__heading {
+    margin-bottom: 40px;
+}
+
+label {
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+
+.form-group {
+    margin-bottom: 22px !important;
+}
+
+input {
+    height: 46px !important;
+    border-radius: 0 !important;
+    color: #696969 !important;
+    font-weight: 500;
+    font-size: 1.08em;
+}
+
+textarea {
+    border-radius: 0 !important;
+    color: #696969 !important;
+    font-weight: 500;
+    font-size: 1.08em;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #696969 !important;
+    font-weight: 500;
+    font-size: 1.08em;
+    padding: 2px;
+}
+
+textarea::-moz-placeholder {
+    color: #696969 !important;
+    font-weight: 500;
+    font-size: 1.08em;
+    padding: 2px;
+}
+
+textarea:-ms-input-placeholder {
+    color: #696969 !important;
+    font-weight: 500;
+    font-size: 1.08em;
+    padding: 2px;
+}
+
+textarea:-moz-placeholder {
+    color: #696969 !important;
+    font-weight: 500;
+    font-size: 1.08em;
+    padding: 2px;
 }
 
 /* Footer */
