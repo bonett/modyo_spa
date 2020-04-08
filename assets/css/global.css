@@ -2,6 +2,7 @@
 @import url('./fonts.css');
 @import url('./bootstrap.css');
 
+/* General Styles */
 html {
     font-family: 'Montserrat', sans-serif !important;
 }
