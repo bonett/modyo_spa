@@ -1,3 +1,59 @@
 /* Import css files */
 @import url('./fonts.css');
 @import url('./bootstrap.css');
+
+html {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #01b89f;
+}
+
+span {
+    color: #00d2b5;
+}
+
+/* Navigation */
+
+.navigation {
+    border: 1px solid #fbfbfb;
+    box-shadow: 0px 0px 8px #efefef;
+    height: 60px;
+}
+
+.navigation__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    margin: 0;
+}
+
+.navigation__list {
+    padding: 4px;
+    margin: 0 0 0 80px;
+}
+
+.navigation__item {
+    font-weight: 400;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 1em;
+}
+
+.navigation__item--separator {
+    margin: 0 24px;
+}
+
+.navigation__item--selected {
+    color: #00d2b5;
+}
