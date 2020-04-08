@@ -21,6 +21,56 @@ span {
     color: #00d2b5;
 }
 
+/* Buttons */
+.button {
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    background-image: none;
+    border-radius: 40px;
+    transition: 0.5s all ease;
+    text-transform: capitalize;
+    font-weight: 500;
+    border: none;
+}
+
+.button--primary {
+    padding: 12px 30px;
+    font-size: 1.12em;
+    color: #fff;
+    background-color: #00d2b5;
+    box-shadow: 0 2px 5px rgba(0, 223, 192, 0.6);
+}
+
+.button--primary:hover {
+    color: #fff;
+    background-color: #01b89f;
+    border: none;
+}
+
+.button--secondary {
+    padding: 0;
+    color: #00d2b5;
+    font-size: 1em;
+}
+
+/* Backgrounds */
+.background--primary {
+    background-color: #ffffff;
+}
+
+.background--secondary {
+    background-color: #f6f6f6;
+}
+
+.background--tertiary {
+    background-color: #00d2b5;
+}
+
 /* Navigation */
 
 .navigation {
@@ -56,4 +106,88 @@ span {
 
 .navigation__item--selected {
     color: #00d2b5;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    height: 880px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.header::after {
+    width: calc(49% + 100px);
+    height: 800px;
+    background: url('./../img/landing_1.png');
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    top: 130px;
+    right: 0;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 800px;
+    padding: 20px 0;
+    margin: 20px 4px;
+}
+
+.header__brand {
+    width: 100%;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0;
+    padding: 0;
+}
+
+.header__brand--color {
+    color: #000000;
+}
+
+.header__welcoming {
+    width: 30%;
+    padding-left: 6px;
+    margin: 0;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.header__title {
+    font-size: 4em;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.header__title--color {
+    color: #000000;
+}
+
+.header__description {
+    font-size: 1.1em;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.header__description--color {
+    color: #848484;
+}
+
+.header__button {
+    margin: 38px 0;
 }
