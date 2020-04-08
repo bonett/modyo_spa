@@ -279,3 +279,31 @@ section {
 .feature__button {
     margin: 4px 0;
 }
+
+/* Footer */
+
+footer {
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    border-top: 1px solid #f2f2f2;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 200px;
+    padding: 42px 0;
+}
+
+.footer__copyright {
+    font-size: 1.13em;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.footer__copyright--color {
+    color: #848484;
+}
