@@ -333,12 +333,12 @@ section {
 
 /* Advantage Section */
 .advantage__content {
-    margin: 20px 0;
-    padding: 20px 0;
+    margin: 14px 0;
+    padding: 10px 0;
 }
 
 .advantage__column:nth-child(2) {
-    padding: 0 10px 10px 30px;
+    padding: 20px 10px 10px 30px;
 }
 
 .advantage__heading {
