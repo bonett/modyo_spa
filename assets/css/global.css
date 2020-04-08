@@ -94,14 +94,49 @@ section {
     color: #000000;
 }
 
-.section__card {
+/* Card */
+.card {
     border-radius: 4px;
-    padding: 26px 10px 26px 30px;
+    box-shadow: 0 0 6px #f5f5f5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    box-shadow: 0 0 6px #f5f5f5;
+    padding: 30px 20px;
+}
+
+.card__header {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.card__avatar {
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 1.7em;
+    box-shadow: 0 0 5px rgba(0, 223, 192, 0.6);
+}
+
+.card__avatar--circle {
+    border-radius: 40px;
+}
+
+.card--border {
+    border: 1px solid gray;
+}
+
+.card__content {
+    width: 100%;
+}
+
+.card__footer {
+    width: 100%;
 }
 
 /* Navigation */
@@ -236,30 +271,10 @@ section {
     margin: 20px 0 8px 0;
 }
 
-.feature__avatar {
-    width: 40px;
-    height: 40px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.7em;
-    box-shadow: 0 0 5px rgba(0, 223, 192, 0.6);
-}
-
-.feature__avatar--circle {
-    border-radius: 40px;
-}
-
-.feature__reference {
-    margin: 16px 0 4px 0;
-    padding: 0;
-}
-
 .feature__title {
     font-weight: 500;
     font-size: 1.1em;
+    padding: 4px 8px 0 10px;
 }
 
 .feature__title--color {
@@ -267,9 +282,10 @@ section {
 }
 
 .feature__description {
-    line-height: 1.7;
-    font-size: 1.06em;
-    padding: 0 12px 0 0;
+    line-height: 1.8;
+    font-size: 1.04em;
+    padding: 0 8px 2px 10px;
+    letter-spacing: 0;
 }
 
 .feature__description--color {
@@ -277,16 +293,16 @@ section {
 }
 
 .feature__button {
-    margin: 4px 0;
+    padding: 4px 8px 0 10px;
+}
+
+/* Advantage Section */
+.advantage__content {
+    margin: 20px 0;
+    padding: 30px 0;
 }
 
 /* About Section */
-
-.about {
-    height: 675px;
-    min-height: 675px;
-    max-height: 700px;
-}
 
 .about__content {
     margin: 20px 0;
