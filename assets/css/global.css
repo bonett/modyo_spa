@@ -41,7 +41,7 @@ span {
 .list__item:before {
     font-family: 'icomoon';
     content: '\e876';
-    margin-left: -20px;
+    margin-left: -16px;
     margin-right: 14px;
     color: #00ad00;
     font-size: 1.2em;
@@ -146,8 +146,6 @@ section {
 }
 
 .card__avatar {
-    width: 40px;
-    height: 40px;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -155,19 +153,62 @@ section {
     align-items: center;
     margin-left: 10px;
     font-size: 1.7em;
-    box-shadow: 0 0 5px rgba(0, 223, 192, 0.6);
+}
+
+.card__avatar--icon {
+    width: 40px;
+    height: 40px;
+}
+
+.card__avatar--face {
+    width: 64px;
+    height: 64px;
 }
 
 .card__avatar--circle {
     border-radius: 40px;
+    box-shadow: 0 0 5px rgba(0, 223, 192, 0.6);
+}
+
+.card__naming {
+    margin: 0 8px;
+    padding: 0 8px;
+    width: 100%;
+}
+
+.card__founder {
+    font-size: 1.12em;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-top: 18px;
+}
+
+.card__company {
+    font-weight: 400;
+    font-size: 1.1em;
 }
 
 .card--border {
-    border: 1px solid gray;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 14px #f2f2f2;
 }
 
 .card__content {
     width: 100%;
+}
+
+.card__blockquote {
+    padding: 12px;
+}
+
+.blockquote__paragraph {
+    font-size: 1.12em;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.blockquote__paragraph--color {
+    color: #848484;
 }
 
 .card__footer {
@@ -373,7 +414,12 @@ section {
 }
 
 .advantage__founder {
-    padding: 0 0 0 20px;
+    padding: 20px 0 0 20px;
+    margin: 18px 0;
+}
+
+.advantage__card {
+    padding: 10px;
 }
 
 /* About Section */
