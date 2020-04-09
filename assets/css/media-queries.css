@@ -172,4 +172,9 @@
         height: 700px;
         top: 185px;
     }
+
+    .header__content {
+        padding: 20px 0 40px 0;
+        margin: 20px 4px 40px 4px;
+    }
 }
