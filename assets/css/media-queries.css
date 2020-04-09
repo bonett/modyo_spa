@@ -82,8 +82,8 @@
     }
 
     .about__button {
-        margin-left: 0;
-        margin-top: 10px;
+        margin-top: 30px;
+        padding-left: 0;
     }
 
     .contact__column {
@@ -254,8 +254,8 @@
     }
 
     .about__button {
-        margin-left: 18px;
-        margin-top: 10px;
+        padding-left: 15px;
+        margin-top: 30px;
     }
 
     .contact__column {
