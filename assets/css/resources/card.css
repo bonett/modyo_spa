@@ -1,6 +1,9 @@
 /***********************************
     Card Css
 ************************************/
+
+/* Card General */
+
 .card {
     border-radius: 4px;
     box-shadow: 0 0 6px #f5f5f5;
@@ -21,10 +24,19 @@
     justify-content: flex-start;
 }
 
+.card--border {
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 14px #f2f2f2;
+}
+
+/* Card Header */
+
 .card__header {
     margin-bottom: 12px;
     width: 100%;
 }
+
+/* Card Avatar */
 
 .card__avatar {
     align-items: center;
@@ -51,6 +63,8 @@
     box-shadow: 0 0 5px rgba(0, 223, 192, 0.6);
 }
 
+/* Card Naming */
+
 .card__naming {
     margin: 0 8px;
     padding: 0 8px;
@@ -69,10 +83,7 @@
     font-weight: 400;
 }
 
-.card--border {
-    border: 1px solid #eaeaea;
-    box-shadow: 0 4px 14px #f2f2f2;
-}
+/* Card Content */
 
 .card__content {
     width: 100%;
@@ -81,6 +92,8 @@
 .card__blockquote {
     padding: 12px;
 }
+
+/* Card Footer */
 
 .card__footer {
     width: 100%;

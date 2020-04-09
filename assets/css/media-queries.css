@@ -1,4 +1,7 @@
-/* Small devices (landscape phones, 576px and up) */
+/***********************************
+    Extra small devices - For example an Iphone 4
+************************************/
+
 @media (min-width: 316px) {
     .navigation__content {
         padding-left: 0;
@@ -92,7 +95,11 @@
     }
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/***********************************
+    small devices - Form example an Iphone 5
+    or any mobiles that your with is 375px
+************************************/
+
 @media (min-width: 321px) {
     .header__title {
         font-size: 2em;
@@ -102,6 +109,10 @@
         font-size: 1.1em;
     }
 }
+
+/***********************************
+    small devices - Form example tablets
+************************************/
 
 @media (min-width: 576px) {
     .navigation__content {
@@ -138,7 +149,10 @@
     }
 }
 
-/* Medium devices (tablets, 768px and up)*/
+/***********************************
+    small devices - Form example an Ipad
+************************************/
+
 @media (min-width: 768px) {
 
     .navigation__content {
@@ -174,7 +188,11 @@
     }
 }
 
-/* Large devices (desktops, 992px and up)*/
+/***********************************
+    Medium devices - Form example an Ipad (landscape)
+    or Desktop with screen 1024px
+************************************/
+
 @media (min-width: 992px) {
 
     .navigation__content {
@@ -249,7 +267,10 @@
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up)*/
+/***********************************
+    Larga devices- Form example an Desktop
+************************************/
+
 @media (min-width: 1200px) {
     .header::after {
         top: 200px;
@@ -261,6 +282,10 @@
     }
 }
 
+/***********************************
+    Larga devices- Form example an Desktop (Retina)
+************************************/
+
 @media (min-width: 1400px) {
     .header::after {
         height: 654px;
@@ -268,6 +293,10 @@
         width: 815px;
     }
 }
+
+/***********************************
+    Extra larga devices- Form example an Desktop (Retina) > 1600
+************************************/
 
 @media (min-width: 1600px) {
     .header::after {
