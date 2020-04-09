@@ -28,16 +28,38 @@
         <![endif]-->
 
     <!-- Navigation -->
-    <nav class="navigation">
+    <nav class="navbar navigation">
         <div class="container">
-            <div class="navigation__content">
-                <ul class="navigation__list">
-                    <a class="navigation__item navigation__item--separator">Home</a>
-                    <a class="navigation__item navigation__item--separator">Features</a>
-                    <a class="navigation__item navigation__item--separator">About Us</a>
-                    <a class="navigation__item navigation__item--separator">Testimonials</a>
-                    <a class="navigation__item navigation__item--separator">Blog</a>
-                    <a class="navigation__item navigation__item--separator navigation__item--selected">Contact</a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#menu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand__content brand__content--color hidden-sm hidden-md hidden-lg">Landerz<span>.</span></a>
+            </div>
+            <div class="collapse navbar-collapse navigation__content" id="menu">
+                <ul class="nav navbar-nav navbar-center navigation__list">
+                    <li>
+                        <a class="navigation__item navigation__item--separator">Home</a>
+                    </li>
+                    <li>
+                        <a class="navigation__item navigation__item--separator">Features</a>
+                    </li>
+                    <li>
+                        <a class="navigation__item navigation__item--separator">About Us</a>
+                    </li>
+                    <li>
+                        <a class="navigation__item navigation__item--separator">Testimonials</a>
+                    </li>
+                    <li>
+                        <a class="navigation__item navigation__item--separator">Blog</a>
+                    </li>
+                    <li>
+                        <a class="navigation__item navigation__item--separator navigation__item--selected">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -47,8 +69,8 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="header__brand hidden-xs hidden-sm">
-                <h2 class="header__brand header__brand--color">Landerz<span>.</span></h2>
+            <div class="brand__content hidden-xs hidden-sm">
+                <h2 class="brand__text brand__text--color">Landerz<span>.</span></h2>
             </div>
             <div class="header__content row">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 header__welcoming">
@@ -297,7 +319,8 @@
                 <h2 class="section__title section__title--primary">Get in touch</h2>
             </div>
             <div class="contact__content row">
-                <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 contact__column">
+                <div
+                    class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 contact__column">
                     <div class="card contact__card background--primary">
                         <form>
                             <div class="row">
@@ -322,7 +345,8 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
                                     <label for="subject">Message</label>
-                                    <textarea type="text" class="form-control" rows="9" id="subject" placeholder="Write your notes or questions here..."></textarea>
+                                    <textarea type="text" class="form-control" rows="9" id="subject"
+                                        placeholder="Write your notes or questions here..."></textarea>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
                                     <button type="submit" class="button button--primary">Send Message</button>
@@ -346,6 +370,8 @@
     </footer>
     <!-- End Footer -->
 
+    <script src="./assets/js/jquery-2.2.4.min.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 
