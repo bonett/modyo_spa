@@ -281,6 +281,16 @@ section {
     margin: 0;
 }
 
+.header::after {
+    background: url(./../img/landing_1.png);
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    right: 0;
+    background-size: cover;
+}
+
 .header__welcoming {
     display: flex;
     flex-direction: column;
@@ -322,7 +332,7 @@ section {
     padding: 0;
 }
 
-.header__media {
+/* .header__media {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -334,7 +344,7 @@ section {
 
 .header__image {
     width: 100%;
-}
+} */
 
 /* Section Feature */
 
