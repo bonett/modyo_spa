@@ -1,0 +1,30 @@
+/***********************************
+    Buttons Css
+************************************/
+
+.button {
+    border-radius: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: 0.5s all ease;
+}
+
+.button--primary {
+    color: #fff;
+    background-color: #00d2b5;
+    box-shadow: 0 2px 5px rgba(0, 223, 192, 0.6);
+    font-size: 1.12em;
+    padding: 12px 30px;
+}
+
+.button--primary:hover {
+    color: #fff;
+    background-color: #01b89f;
+    border: none;
+}
+
+.button--secondary {
+    color: #00d2b5;
+    font-size: 1em;
+    padding: 0;
+}
