@@ -277,27 +277,22 @@ section {
 
 /* Header */
 .header {
-    width: 100%;
-    height: 880px;
     padding: 0;
     margin: 0;
-    position: relative;
 }
 
 .header__content {
-    height: 800px;
     padding: 20px 0;
     margin: 20px 4px;
 }
 
 .header__welcoming {
-    margin: 0;
-    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 0;
+    margin: 0;
 }
 
 .header__title {
@@ -328,22 +323,18 @@ section {
 }
 
 .header__media {
-    margin: 0;
-    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
     padding: 0;
+    margin: 0;
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 .header__image {
-    z-index: 4;
-    position: absolute;
-    left: 100px;
-    top: 74px;
+    width: 100%;
 }
 
 /* Section Feature */
