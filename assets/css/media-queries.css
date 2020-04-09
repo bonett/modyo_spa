@@ -150,12 +150,6 @@
         box-shadow: 0 0 8px #efefef;
     }
 
-    .header::after {
-        width: 490px;
-        height: 400px;
-        top: 248px;
-    }
-
     .header__content {
         padding: 40px 0 0 0;
         margin: 40px 0 0 0;
@@ -163,7 +157,7 @@
 
     .header__welcoming {
         margin: 0;
-        height: 660px;
+        height: 360px;
     }
 
     .header__title {
@@ -192,9 +186,9 @@
     }
 
     .header::after {
-        width: 614px;
-        height: 500px;
-        top: 226px;
+        width: 710px;
+        height: 654px;
+        top: 188px;
     }
 
     .header__content {
@@ -259,7 +253,6 @@
 @media (min-width: 1200px) {
     .header::after {
         width: 740px;
-        height: 600px;
         top: 200px;
     }
 
@@ -271,7 +264,7 @@
 @media (min-width: 1400px) {
     .header::after {
         width: 815px;
-        height: 660px;
+        height: 654px;
         top: 200px;
     }
 }
@@ -279,7 +272,7 @@
 @media (min-width: 1600px) {
     .header::after {
         width: 860px;
-        height: 700px;
+        height: 654px;
         top: 185px;
     }
 
