@@ -1,0 +1,87 @@
+/***********************************
+    Card Css
+************************************/
+.card {
+    border-radius: 4px;
+    box-shadow: 0 0 6px #f5f5f5;
+    padding: 30px 20px;
+}
+
+.card--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card__header {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.card__avatar {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 1.7em;
+}
+
+.card__avatar--icon {
+    width: 40px;
+    height: 40px;
+}
+
+.card__avatar--face {
+    width: 64px;
+    height: 64px;
+}
+
+.card__avatar--circle {
+    border-radius: 40px;
+    box-shadow: 0 0 5px rgba(0, 223, 192, 0.6);
+}
+
+.card__naming {
+    margin: 0 8px;
+    padding: 0 8px;
+    width: 100%;
+}
+
+.card__founder {
+    font-size: 1.12em;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-top: 18px;
+}
+
+.card__company {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.card--border {
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 14px #f2f2f2;
+}
+
+.card__content {
+    width: 100%;
+}
+
+.card__blockquote {
+    padding: 12px;
+}
+
+.card__footer {
+    width: 100%;
+}

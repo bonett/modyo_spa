@@ -1,0 +1,35 @@
+/***********************************
+    Colors Css
+************************************/
+
+/* Fonts */
+
+.text--dark {
+    color: #000000;
+}
+
+.text--white {
+    color: #ffffff;
+}
+
+.text--paragraph {
+    color: #848484;
+}
+
+/* Backgrounds*/
+
+.background--primary {
+    background-color: #ffffff;
+}
+
+.background--secondary {
+    background-color: #f6f6f6;
+}
+
+.background--tertiary {
+    background-color: #00d2b5;
+}
+
+.background--dark {
+    background-color: #000000;
+}

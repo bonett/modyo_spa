@@ -1,0 +1,38 @@
+/***********************************
+    Buttons Css
+************************************/
+.button {
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    background-image: none;
+    border-radius: 40px;
+    transition: 0.5s all ease;
+    text-transform: capitalize;
+    font-weight: 500;
+    border: none;
+}
+
+.button--primary {
+    padding: 12px 30px;
+    font-size: 1.12em;
+    color: #fff;
+    background-color: #00d2b5;
+    box-shadow: 0 2px 5px rgba(0, 223, 192, 0.6);
+}
+
+.button--primary:hover {
+    color: #fff;
+    background-color: #01b89f;
+    border: none;
+}
+
+.button--secondary {
+    padding: 0;
+    color: #00d2b5;
+    font-size: 1em;
+}
