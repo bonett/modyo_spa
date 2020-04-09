@@ -1,0 +1,31 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .navigation {
+        border: 1px solid #fbfbfb;
+        box-shadow: 0 0 0 transparent;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    .navigation {
+        border: 1px solid #fbfbfb;
+        box-shadow: 0 0 8px #efefef;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .navigation {
+        border: 1px solid #fbfbfb;
+        box-shadow: 0 0 8px #efefef;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .navigation {
+        border: 1px solid #fbfbfb;
+        box-shadow: 0 0 8px #efefef;
+    }
+ }

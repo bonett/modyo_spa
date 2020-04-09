@@ -1,6 +1,7 @@
 /* Import css files */
 @import url('./fonts.css');
 @import url('./bootstrap.css');
+@import url('./media-queries.css');
 
 /* General Styles */
 html {
@@ -238,23 +239,20 @@ section {
     color: #000000;
 }
 
+.navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #000000 !important;
+}
+
+
 /* Navigation */
 
-.navigation {
-    border: 1px solid #fbfbfb;
-    box-shadow: 0px 0px 8px #efefef;
-}
-
-.navigation__content {
-    margin: 0;
-}
-
 .navigation__list {
-    padding: 4px 4px 4px 86px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding: 4px;
+    margin: 0;
     width: 100%;
 }
 
