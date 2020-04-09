@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 a,
@@ -281,22 +281,15 @@ section {
     margin: 0;
 }
 
-.header__content {
-    padding: 20px 0;
-    margin: 20px 4px;
-}
-
 .header__welcoming {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 0;
-    margin: 0;
 }
 
 .header__title {
-    font-size: 3.9em;
     text-transform: capitalize;
     font-weight: 800;
     line-height: 1.26;
@@ -308,7 +301,6 @@ section {
 }
 
 .header__description {
-    font-size: 1.1em;
     line-height: 1.7;
     font-weight: 400;
     padding: 0 10px 0 8px;
@@ -319,7 +311,15 @@ section {
 }
 
 .header__button {
-    margin: 38px 0 0 8px;
+    margin: 38px 0 0 6px;
+}
+
+.header__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 .header__media {
@@ -328,7 +328,6 @@ section {
     justify-content: center;
     align-items: end;
     padding: 0;
-    margin: 0;
     position: relative;
     z-index: 2;
 }
