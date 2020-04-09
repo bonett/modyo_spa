@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 a,
@@ -263,7 +263,7 @@ section {
     position: relative;
 }
 
-.header::after {
+/* .header::after {
     width: calc(49% + 100px);
     height: 800px;
     background: url('./../img/landing_1.png');
@@ -273,7 +273,7 @@ section {
     background-repeat: no-repeat;
     top: 130px;
     right: 0;
-}
+} */
 
 .header__content {
     height: 800px;
@@ -332,6 +332,25 @@ section {
 
 .header__button {
     margin: 38px 0 0 8px;
+}
+
+.header__media {
+    margin: 0;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 0;
+    position: relative;
+    z-index: 3;
+}
+
+.header__image {
+    z-index: 4;
+    position: absolute;
+    left: 100px;
+    top: 74px;
 }
 
 /* Section Feature */
