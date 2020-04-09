@@ -1,15 +1,22 @@
 const BASE_URL = 'https://jsonplaceholder.typicode.com',
    defaultText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugait repudiandae explicabo animi minima fuga beatae ilum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.',
    defaultName = ['Andrea Dimitri', 'Alejandro Saldarriaga', 'Jhon Smith', 'Juan Gomez'],
-         limit = 4; // testimonial items to render on screen
+    itemNumber = 4; // testimonial items to render on screen
 
+/**
+ *  It should create slider indicatos
+ * 
+ * @param {parent} Html
+ * @returns null
+ * 
+ */
 const createIndicators = (parent) => {
 
     const ol = document.createElement('ol');
 
     ol.setAttribute('class', 'carousel-indicators');
 
-    for (let index = 0; index < testiominalNumber; index++) {
+    for (let index = 0; index < itemNumber; index++) {
 
         const li = document.createElement('li');
 
@@ -26,14 +33,21 @@ const createIndicators = (parent) => {
     parent.appendChild(ol);
 };
 
+/**
+ *  It should create a certain number of slider with testimonial data
+ * 
+ * @param {parent} Html
+ * @returns null
+ * 
+ */
 const createSliders = (parent) => {
 
-    const content = document.createElement('div'),;
+    const content = document.createElement('div');
 
     content.setAttribute('class', 'carousel-inner carousel__content');
     content.setAttribute('role', 'listbox');
 
-    for (let index = 0; index < testiominalNumber; index++) {
+    for (let index = 0; index < itemNumber; index++) {
 
         const child = document.createElement('div'),
               media = document.createElement('img'),
@@ -49,12 +63,12 @@ const createSliders = (parent) => {
         description.setAttribute('class', 'caption__text text--paragraph');
         name.setAttribute('class', 'caption__name text--dark');
 
-        caption.append(name);
-        description.append(defaultText);
+        name.textContent = defaultName[index];
+        description.textContent = defaultText;
         caption.appendChild(description);
+        caption.appendChild(name);
         child.append(caption);
         child.append(media);
-
         content.appendChild(child);
     }
 
@@ -91,7 +105,7 @@ const addTestimonialToDOM = (postList, userList) => {
 
     let testimonials = handlerReduceList(postList, userList, 'userId', 'id');
 
-    testimonials = _.sampleSize(testimonials, limit); // It should take 5 positions (Randomly) - Lodash
+    testimonials = _.sampleSize(testimonials, itemNumber); // It should take 5 positions (Randomly) - Lodash
 
     createIndicators(parent);
     createSliders(parent);
