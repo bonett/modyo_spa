@@ -37,6 +37,11 @@
     .header__description {
         font-size: 0.9em;
     }
+
+    .feature__item {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -115,6 +120,11 @@
 
     .header__description {
         font-size: 1.1em;
+    }
+
+    .feature__item {
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
 
