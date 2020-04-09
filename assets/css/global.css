@@ -86,6 +86,49 @@ textarea:-moz-placeholder {
     padding: 2px;
 }
 
+.carousel__item {
+    height: 380px;
+    width: 100%;
+    margin: 60px 0 20px 0;
+    padding: 0;
+}
+
+.avatar__testimonial {
+    margin:  0 auto;
+    height: 100x;
+    width: 100px;
+    box-shadow: 0 2px 8px #c4c4c4;
+}
+
+.avatar--face {
+    border-radius: 50% !important;
+}
+
+.carousel-indicators .active {
+    background-color: #00d2b5 !important;
+}
+
+.carousel-indicators li {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #e4e4e4 !important;
+}
+
+.carousel-caption {
+    text-shadow: none;
+}
+
+.caption__text {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.caption__name {
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+
 
 /***********************************
     Generic Classes
