@@ -276,10 +276,6 @@ section {
 }
 
 .header__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     height: 800px;
     padding: 20px 0;
     margin: 20px 4px;
@@ -292,8 +288,9 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 4px 0;
+    margin: 0;
     padding: 0;
+    font-size: 1.495em;
 }
 
 .header__brand--color {
@@ -301,10 +298,8 @@ section {
 }
 
 .header__welcoming {
-    width: 30%;
-    padding-left: 6px;
     margin: 0;
-    height: 800px;
+    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -313,10 +308,11 @@ section {
 }
 
 .header__title {
-    font-size: 4em;
+    font-size: 3.9em;
     text-transform: capitalize;
-    font-weight: 700;
-    line-height: 1.3;
+    font-weight: 800;
+    line-height: 1.26;
+    padding: 0 0 0 8px;
 }
 
 .header__title--color {
@@ -327,6 +323,7 @@ section {
     font-size: 1.1em;
     line-height: 1.7;
     font-weight: 400;
+    padding: 0 10px 0 8px;
 }
 
 .header__description--color {
@@ -334,7 +331,7 @@ section {
 }
 
 .header__button {
-    margin: 38px 0;
+    margin: 38px 0 0 8px;
 }
 
 /* Section Feature */
