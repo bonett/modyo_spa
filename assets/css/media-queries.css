@@ -42,6 +42,29 @@
         padding-right: 10px;
         padding-left: 10px;
     }
+
+    .advantage__column:nth-child(1) {
+        height: 350px;
+    }
+
+    .advantage__column:nth-child(2) {
+        padding: 10px;
+    }
+
+    .advantage__title {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .advantage__guarantees {
+        padding: 4px 20px;
+    }
+
+    .advantage__founder {
+        padding: 20px 10px;
+        margin: 19px 0;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -52,6 +75,10 @@
 
     .header__description {
         font-size: 1.1em;
+    }
+
+    .advantage__title {
+        font-size: 1.9em;
     }
 }
 
@@ -83,6 +110,14 @@
 
     .header__title {
         font-size: 3.7em;
+    }
+
+    .advantage__column:nth-child(1) {
+        height: 420px;
+    }
+
+    .advantage__title {
+        font-size: 2.4em;
     }
 }
 
@@ -126,6 +161,10 @@
         padding-right: 15px;
         padding-left: 15px;
     }
+
+    .advantage__title {
+        font-size: 2.4em;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -157,6 +196,24 @@
     .header__title {
         font-size: 3.9em;
     }
+
+    .advantage__column:nth-child(2) {
+        padding: 20px 10px 10px 30px;
+    }
+
+    .advantage__title {
+        font-size: 2.4em;
+        text-align: left;
+    }
+
+    .advantage__founder {
+        padding: 20px 0 0 20px;
+        margin: 18px 0;
+    }
+
+    .advantage__guarantees {
+        padding: 0 20px 0 28px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -165,6 +222,10 @@
         width: 740px;
         height: 600px;
         top: 200px;
+    }
+
+    .advantage__title {
+        font-size: 2.8em;
     }
 }
 

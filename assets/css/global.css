@@ -332,20 +332,6 @@ section {
     padding: 0;
 }
 
-/* .header__media {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    padding: 0;
-    position: relative;
-    z-index: 2;
-}
-
-.header__image {
-    width: 100%;
-} */
-
 /* Section Feature */
 
 .feature__content {
@@ -388,16 +374,11 @@ section {
     padding: 10px 0;
 }
 
-.advantage__column:nth-child(2) {
-    padding: 20px 10px 10px 30px;
-}
-
 .advantage__heading {
     padding: 10px 0 0 18px;
 }
 
 .advantage__title {
-    font-size: 2.8em;
     font-weight: 800;
     line-height: 1.2;
     word-spacing: 0;
@@ -417,15 +398,6 @@ section {
 
 .advantage__description--color {
     color: #848484;
-}
-
-.advantage__guarantees {
-    padding: 0 20px 0 28px;
-}
-
-.advantage__founder {
-    padding: 20px 0 0 20px;
-    margin: 18px 0;
 }
 
 .advantage__card {
