@@ -229,6 +229,10 @@ section {
     height: 14px;
 }
 
+.brand__mobile {
+    padding: 6px 0;
+}
+
 .brand__text {
     margin: 0;
     padding: 0;
