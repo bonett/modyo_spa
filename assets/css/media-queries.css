@@ -15,15 +15,15 @@
     }
 
     .header__content {
-        padding: 0 0 40px 0;
         margin: 0 0 40px 0;
+        padding: 0 0 40px 0;
     }
 
     .header__image {
-        z-index: 4;
-        position: relative;
         left: 0;
+        position: relative;
         top: 0;
+        z-index: 4;
     }
 
     .header__welcoming {
@@ -39,8 +39,8 @@
     }
 
     .feature__item {
-        padding-right: 10px;
         padding-left: 10px;
+        padding-right: 10px;
     }
 
     .advantage__column:nth-child(1) {
@@ -52,9 +52,9 @@
     }
 
     .advantage__title {
-        text-align: center;
         font-size: 2.8em;
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .advantage__guarantees {
@@ -62,8 +62,8 @@
     }
 
     .advantage__founder {
-        padding: 20px 10px;
         margin: 19px 0;
+        padding: 20px 10px;
     }
 
     .about__column:nth-child(2) {
@@ -119,10 +119,10 @@
     }
 
     .header__image {
-        z-index: 4;
-        position: relative;
         left: 0;
+        position: relative;
         top: 0;
+        z-index: 4;
     }
 
     .header__welcoming {
@@ -151,13 +151,13 @@
     }
 
     .header__content {
-        padding: 40px 0 0 0;
         margin: 40px 0 0 0;
+        padding: 40px 0 0 0;
     }
 
     .header__welcoming {
-        margin: 0;
         height: 360px;
+        margin: 0;
     }
 
     .header__title {
@@ -169,8 +169,8 @@
     }
 
     .feature__item {
-        padding-right: 15px;
         padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -186,14 +186,14 @@
     }
 
     .header::after {
-        width: 710px;
         height: 654px;
         top: 188px;
+        width: 710px;
     }
 
     .header__content {
-        padding: 20px 0;
         margin: 20px 4px;
+        padding: 20px 0;
     }
 
     .header__welcoming {
@@ -214,8 +214,8 @@
     }
 
     .advantage__founder {
-        padding: 20px 0 0 20px;
         margin: 18px 0;
+        padding: 20px 0 0 20px;
     }
 
     .advantage__guarantees {
@@ -252,8 +252,8 @@
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
     .header::after {
-        width: 740px;
         top: 200px;
+        width: 740px;
     }
 
     .advantage__title {
@@ -263,21 +263,21 @@
 
 @media (min-width: 1400px) {
     .header::after {
-        width: 815px;
         height: 654px;
         top: 200px;
+        width: 815px;
     }
 }
 
 @media (min-width: 1600px) {
     .header::after {
-        width: 860px;
         height: 654px;
         top: 185px;
+        width: 860px;
     }
 
     .header__content {
-        padding: 20px 0 40px 0;
         margin: 20px 4px 40px 4px;
+        padding: 20px 0 40px 0;
     }
 }
