@@ -426,7 +426,6 @@ section {
     font-weight: 500;
     line-height: 1.3;
     margin: 0;
-    padding: 6px 10px 12px 20px;
 }
 
 .about__description {
@@ -434,12 +433,6 @@ section {
     line-height: 1.7;
     color: #848484;
     margin: 0;
-    padding: 10px 15px 10px 20px;
-}
-
-.about__button {
-    margin-left: 18px;
-    margin-top: 10px;
 }
 
 /* Contact Section */
