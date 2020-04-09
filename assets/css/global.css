@@ -31,6 +31,42 @@ p {
     line-height: 1.7;
 }
 
+textarea {
+    border-radius: 0 !important;
+    color: #696969 !important;
+    font-size: 1.08em;
+    font-weight: 500;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #696969 !important;
+    font-size: 1.08em;
+    font-weight: 500;
+    padding: 2px;
+}
+
+textarea::-moz-placeholder {
+    color: #696969 !important;
+    font-size: 1.08em;
+    font-weight: 500;
+    padding: 2px;
+}
+
+textarea:-ms-input-placeholder {
+    color: #696969 !important;
+    font-size: 1.08em;
+    font-weight: 500;
+    padding: 2px;
+}
+
+textarea:-moz-placeholder {
+    color: #696969 !important;
+    font-size: 1.08em;
+    font-weight: 500;
+    padding: 2px;
+}
+
+
 /***********************************
     Generic Classes
 ************************************/
@@ -44,10 +80,6 @@ p {
     line-height: 1.7;
     font-size: 1.12em;
     margin: 10px 0;
-}
-
-.list__item--color {
-    color: #848484;
 }
 
 .list__item:before {
@@ -87,12 +119,8 @@ section {
 
 .blockquote__paragraph {
     font-size: 1.12em;
-    line-height: 1.7;
     font-style: italic;
-}
-
-.blockquote__paragraph--color {
-    color: #848484;
+    line-height: 1.7;
 }
 
 /***********************************
@@ -100,14 +128,14 @@ section {
 ************************************/
 
 .brand__content {
-    width: 100%;
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
+    height: 14px;
     justify-content: center;
-    align-items: flex-end;
     margin: 0;
     padding: 0;
-    height: 14px;
+    width: 100%;
 }
 
 .brand__mobile {
@@ -115,9 +143,9 @@ section {
 }
 
 .brand__text {
+    font-size: 2.15em;
     margin: 0;
     padding: 0;
-    font-size: 2.15em;
 }
 
 
@@ -126,15 +154,15 @@ section {
 ************************************/
 
 .navigation__list {
-    padding: 4px;
     margin: 0;
+    padding: 4px;
     width: 100%;
 }
 
 .navigation__item {
+    font-size: 1.1em;
     font-weight: 400;
     text-transform: capitalize;
-    font-size: 1.1em;
 }
 
 .navigation__item--separator {
@@ -158,33 +186,33 @@ section {
 ************************************/
 
 .header {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .header::after {
-    background: url(./../img/landing_1.png);
     content: '';
-    position: absolute;
-    z-index: 1;
-    background-repeat: no-repeat;
-    right: 0;
     background-size: cover;
+    background-repeat: no-repeat;
+    background: url(./../img/landing_1.png);
+    position: absolute;
+    right: 0;
+    z-index: 1;
 }
 
 .header__welcoming {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     padding: 0;
 }
 
 .header__title {
-    text-transform: capitalize;
     font-weight: 800;
     line-height: 1.26;
     padding: 0 0 0 8px;
+    text-transform: capitalize;
 }
 
 .header__description {
@@ -196,10 +224,10 @@ section {
 }
 
 .header__mobile {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 0;
 }
 
@@ -208,8 +236,8 @@ section {
 ************************************/
 
 .feature__content {
-    margin: 40px 0;
     padding: 0;
+    margin: 40px 0;
 }
 
 .feature__item {
@@ -217,16 +245,16 @@ section {
 }
 
 .feature__title {
-    font-weight: 500;
     font-size: 1.1em;
+    font-weight: 500;
     padding: 4px 8px 0 10px;
 }
 
 .feature__description {
-    line-height: 1.8;
     font-size: 1.04em;
-    padding: 0 8px 2px 10px;
     letter-spacing: 0;
+    line-height: 1.8;
+    padding: 0 8px 2px 10px;
 }
 
 .feature__button {
@@ -238,8 +266,8 @@ section {
 ************************************/
 
 .advantage__content {
-    margin: 14px 0;
     padding: 10px 0;
+    margin: 14px 0;
 }
 
 .advantage__heading {
@@ -248,16 +276,16 @@ section {
 
 .advantage__title {
     font-weight: 800;
+    letter-spacing: 0;
     line-height: 1.2;
     word-spacing: 0;
-    letter-spacing: 0;
 }
 
 .advantage__description {
-    line-height: 1.8;
     font-size: 1.1em;
-    padding: 14px 0;
     letter-spacing: 0;
+    line-height: 1.8;
+    padding: 14px 0;
 }
 
 .advantage__card {
@@ -269,8 +297,8 @@ section {
 ************************************/
 
 .about__content {
-    margin: 20px 0;
     padding: 30px 0;
+    margin: 20px 0;
 }
 
 .about__image {
@@ -300,8 +328,8 @@ section {
 ************************************/
 
 .contact__content {
-    margin: 40px 0;
     padding: 20px 0;
+    margin: 40px 0;
 }
 
 form {
@@ -313,8 +341,8 @@ form {
 }
 
 label {
-    font-weight: 400;
     font-size: 1.1em;
+    font-weight: 400;
     margin-bottom: 4px;
 }
 
@@ -323,46 +351,11 @@ label {
 }
 
 input {
+    border-radius: 0 !important;
+    color: #696969 !important;
     height: 46px !important;
-    border-radius: 0 !important;
-    color: #696969 !important;
-    font-weight: 500;
     font-size: 1.08em;
-}
-
-textarea {
-    border-radius: 0 !important;
-    color: #696969 !important;
     font-weight: 500;
-    font-size: 1.08em;
-}
-
-textarea::-webkit-input-placeholder {
-    color: #696969 !important;
-    font-weight: 500;
-    font-size: 1.08em;
-    padding: 2px;
-}
-
-textarea::-moz-placeholder {
-    color: #696969 !important;
-    font-weight: 500;
-    font-size: 1.08em;
-    padding: 2px;
-}
-
-textarea:-ms-input-placeholder {
-    color: #696969 !important;
-    font-weight: 500;
-    font-size: 1.08em;
-    padding: 2px;
-}
-
-textarea:-moz-placeholder {
-    color: #696969 !important;
-    font-weight: 500;
-    font-size: 1.08em;
-    padding: 2px;
 }
 
 /***********************************
@@ -370,18 +363,17 @@ textarea:-moz-placeholder {
 ************************************/
 
 footer {
-    padding: 0;
-    margin: 0;
     height: 200px;
-    border-top: 1px solid #f2f2f2;
+    margin: 0;
+    padding: 0;
 }
 
 .footer__content {
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
     height: 200px;
+    justify-content: center;
     padding: 42px 0;
 }
 
@@ -389,8 +381,4 @@ footer {
     font-size: 1.13em;
     line-height: 1;
     font-weight: 400;
-}
-
-.footer__copyright--color {
-    color: #848484;
 }

@@ -8,17 +8,17 @@
 }
 
 .card--column {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
 
 .card--row {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .card__header {
@@ -27,23 +27,23 @@
 }
 
 .card__avatar {
+    align-items: center;
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
     font-size: 1.7em;
+    justify-content: center;
+    margin-left: 10px;
 }
 
 .card__avatar--icon {
-    width: 40px;
     height: 40px;
+    width: 40px;
 }
 
 .card__avatar--face {
-    width: 64px;
     height: 64px;
+    width: 64px;
 }
 
 .card__avatar--circle {
@@ -65,8 +65,8 @@
 }
 
 .card__company {
-    font-weight: 400;
     font-size: 1.1em;
+    font-weight: 400;
 }
 
 .card--border {
