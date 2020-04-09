@@ -442,14 +442,6 @@ section {
     padding: 20px 0;
 }
 
-.contact__column {
-    padding: 0 64px;
-}
-
-.contact__card {
-    padding: 30px 20px 50px 20px !important;
-}
-
 form {
     padding: 3px 26px;
 }

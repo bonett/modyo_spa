@@ -82,6 +82,14 @@
         margin-left: 0;
         margin-top: 10px;
     }
+
+    .contact__column {
+        padding: 0 10px;
+    }
+
+    .contact__card {
+        padding: 30px 0 50px 0 !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -236,6 +244,14 @@
     .about__button {
         margin-left: 18px;
         margin-top: 10px;
+    }
+
+    .contact__column {
+        padding: 0 64px;
+    }
+
+    .contact__card {
+        padding: 30px 20px 50px 20px  !important;
     }
 }
 
