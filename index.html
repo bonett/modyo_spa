@@ -22,7 +22,7 @@
 
     <!-- Import Css -->
     <link rel="stylesheet" href="./assets/css/fonts.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/global.css">
 </head>
 
@@ -106,7 +106,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
                     <div class="card card--column background--primary">
                         <div class="card__header">
-                            <div class="card__avatar card__avatar--icon card__avatar--circle background--tertiary">
+                            <div class="avatar__content avatar--icon background--tertiary">
                                 <i class="icon-sync"></i>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
                     <div class="card card--column background--primary">
                         <div class="card__header">
-                            <div class="card__avatar card__avatar--icon card__avatar--circle background--tertiary">
+                            <div class="avatar__content avatar--icon background--tertiary">
                                 <i class="icon-store_mall_directory"></i>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
                     <div class="card card--column background--primary">
                         <div class="card__header">
-                            <div class="card__avatar card__avatar--icon card__avatar--circle background--tertiary">
+                            <div class="avatar__content avatar--icon background--tertiary">
                                 <i class="icon-shopping_basket"></i>
                             </div>
                         </div>
@@ -170,7 +170,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
                     <div class="card card--column background--primary">
                         <div class="card__header">
-                            <div class="card__avatar card__avatar--icon card__avatar--circle background--tertiary">
+                            <div class="avatar__content avatar--icon background--tertiary">
                                 <i class="icon-history"></i>
                             </div>
                         </div>
@@ -191,7 +191,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
                     <div class="card card--column background--primary">
                         <div class="card__header">
-                            <div class="card__avatar card__avatar--icon card__avatar--circle background--tertiary">
+                            <div class="avatar__content avatar--icon background--tertiary">
                                 <i class="icon-smile-o"></i>
                             </div>
                         </div>
@@ -212,7 +212,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
                     <div class="card card--column background--primary">
                         <div class="card__header">
-                            <div class="card__avatar card__avatar--icon card__avatar--circle background--tertiary">
+                            <div class="avatar__content avatar--icon background--tertiary">
                                 <i class="icon-plug"></i>
                             </div>
                         </div>
@@ -258,16 +258,16 @@
                     <div class="advantage__founder">
                         <div class="card advantage__card card--border">
                             <div class="card__header card--row">
-                                <div class="card__avatar card__avatar--face">
+                                <div class="avatar__content avatar--face">
                                     <img class="img-responsive img-circle" src="./assets/img/person_1.jpg">
                                 </div>
-                                <div class="card__naming">
-                                    <h4 class="card__founder">Amalia g.</h4>
-                                    <h4 class="card__company">Co-Founder, XYZ inc.</h4>
+                                <div class="founder__content">
+                                    <h4 class="founder__name text--dark">Amalia g.</h4>
+                                    <h4 class="founder__company text--dark">Co-Founder, XYZ inc.</h4>
                                 </div>
                             </div>
                             <div class="card__content">
-                                <div class="card__blockquote">
+                                <div class="blockquote__content">
                                     <p class="blockquote__paragraph text--paragraph">"Lorem ipsum dolor sit
                                         amet consectetur adipisicing elit. Ducimus vitae ipsa
                                         asperiores inventore aperiam iure?"</p>
@@ -300,7 +300,9 @@
                             maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam
                             delectus! At maiores, itaque.
                         </p>
-                        <a class="about__button button button--primary">Learn more</a>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about__button">
+                            <a class="button button--primary">Learn more</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -315,7 +317,7 @@
                 <h2 class="section__title text--dark">Testimonials</h2>
             </div>
             <div class="testimonial__content row">
-                Hola
+                <div id="carousel-default" class="carousel slide" data-ride="carousel"></div>
             </div>
         </div>
     </section>
@@ -357,7 +359,8 @@
                                         placeholder="Write your notes or questions here..."></textarea>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
-                                    <button type="submit" class="button button--primary" disabled="disabled">Send Message</button>
+                                    <button type="submit" class="button button--primary" disabled="disabled">Send
+                                        Message</button>
                                 </div>
                             </div>
                         </form>
@@ -380,7 +383,9 @@
 
     <!-- Scripts -->
     <script src="./assets/js/jquery-2.2.4.min.js"></script>
-    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/axios.min.js"></script>
+    <script src="./assets/js/lodash.min.js"></script>
     <script src="./assets/js/app.js"></script>
     <!-- End Scripts -->
 </body>

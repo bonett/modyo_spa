@@ -1,5 +1,6 @@
 /* Import Resources (Customize Css) */
 @import url('./resources/card.css');
+@import url('./resources/avatar.css');
 @import url('./resources/colors.css');
 @import url('./resources/buttons.css');
 @import url('./media-queries.css');
@@ -86,7 +87,6 @@ textarea:-moz-placeholder {
     padding: 2px;
 }
 
-
 /***********************************
     Generic Classes
 ************************************/
@@ -110,6 +110,24 @@ textarea:-moz-placeholder {
     font-size: 1.2em;
     margin-left: -16px;
     margin-right: 14px;
+}
+
+.founder__content {
+    margin: 0 8px;
+    padding: 0 8px;
+    width: 100%;
+}
+
+.founder__name {
+    font-size: 1.12em;
+    font-weight: 800;
+    margin-top: 18px;
+    text-transform: capitalize;
+}
+
+.founder__company {
+    font-size: 1.1em;
+    font-weight: 400;
 }
 
 /***********************************
@@ -137,6 +155,10 @@ section {
 /***********************************
     BlockQuote
 ************************************/
+
+.blockquote__content {
+    padding: 12px;
+}
 
 .blockquote__paragraph {
     font-size: 1.12em;
