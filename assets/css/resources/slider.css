@@ -3,7 +3,6 @@
 ************************************/
 
 .carousel__item {
-    height: 380px;
     margin: 60px 0 20px 0;
     padding: 0;
     width: 100%;
@@ -24,7 +23,6 @@
 }
 
 .caption__text {
-    font-size: 1.5em;
     font-style: italic;
     font-weight: 400;
 }

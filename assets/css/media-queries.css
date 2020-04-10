@@ -86,6 +86,14 @@
         padding-left: 0;
     }
 
+    .carousel__item {
+        height: 420px;
+    }
+
+    .caption__text {
+        font-size: 1em;
+    }
+
     .contact__column {
         padding: 0 10px;
     }
@@ -106,6 +114,14 @@
     }
 
     .header__description {
+        font-size: 1.1em;
+    }
+
+    .carousel__item {
+        height: 450px;
+    }
+
+    .caption__text {
         font-size: 1.1em;
     }
 }
@@ -147,6 +163,14 @@
     .advantage__column:nth-child(1) {
         height: 580px;
     }
+
+    .carousel__item {
+        height: 420px;
+    }
+
+    .caption__text {
+        font-size: 1.3em;
+    }
 }
 
 /***********************************
@@ -185,6 +209,14 @@
     .feature__item {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .carousel__item {
+        height: 380px;
+    }
+
+    .caption__text {
+        font-size: 1.1em;
     }
 }
 
@@ -258,6 +290,14 @@
         margin-top: 30px;
     }
 
+    .carousel__item {
+        height: 380px;
+    }
+
+    .caption__text {
+        font-size: 1.3em;
+    }
+
     .contact__column {
         padding: 0 64px;
     }
@@ -279,6 +319,10 @@
 
     .advantage__title {
         font-size: 2.8em;
+    }
+
+    .caption__text {
+        font-size: 1.5em;
     }
 }
 
