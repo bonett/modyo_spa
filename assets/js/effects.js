@@ -34,4 +34,6 @@ const mainEffects = () => {
     scrollFunction();
 };
 
-mainEffects();
+window.onload = () => {
+    mainEffects();
+}

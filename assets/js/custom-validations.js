@@ -27,4 +27,6 @@ const mainValidations = () => {
     customInputValidation();
 };
 
-mainValidations();
+window.onload = () => {
+    mainValidations();
+}
