@@ -156,11 +156,9 @@ textarea:-moz-placeholder {
     opacity: 1;
 }
 
-.text-help {
-    color: #ef3f3f;
-    font-size: 0.9em;
-    margin: 5px 0;
-    font-weight: 400;
+.input--error{
+    border:1px solid red;
+    color:red;
 }
 
 /***********************************
