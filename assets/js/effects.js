@@ -27,4 +27,4 @@ const mainEffects = () => {
     scrollFunction();
 };
 
-mainEffects()
+mainEffects();

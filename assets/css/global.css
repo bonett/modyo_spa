@@ -9,6 +9,7 @@
 /***********************************
     Basic Elements
 ************************************/
+
 html {
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -147,13 +148,20 @@ textarea:-moz-placeholder {
     right: 30px;
     transition: 0.5s all ease;
     z-index: 99;
-  }
-  
-  .go__top:hover {
+}
+
+.go__top:hover {
     background-color: #00d2b5;
     color: white;
     opacity: 1;
-  }
+}
+
+.text-help {
+    color: #ef3f3f;
+    font-size: 0.9em;
+    margin: 5px 0;
+    font-weight: 400;
+}
 
 /***********************************
     Section Layout
