@@ -86,6 +86,18 @@
         padding-left: 0;
     }
 
+    .carousel__item {
+        height: 380px;
+    }
+
+    .carousel-caption {
+        top: 120px;
+    }
+
+    .caption__text {
+        font-size: 1em;
+    }
+
     .contact__column {
         padding: 0 10px;
     }
@@ -147,6 +159,10 @@
     .advantage__column:nth-child(1) {
         height: 580px;
     }
+
+    .caption__text {
+        font-size: 1.3em;
+    }
 }
 
 /***********************************
@@ -185,6 +201,10 @@
     .feature__item {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .caption__text {
+        font-size: 1.33em;
     }
 }
 
@@ -258,6 +278,10 @@
         margin-top: 30px;
     }
 
+    .caption__text {
+        font-size: 1.3em;
+    }
+
     .contact__column {
         padding: 0 64px;
     }
@@ -279,6 +303,10 @@
 
     .advantage__title {
         font-size: 2.8em;
+    }
+
+    .caption__text {
+        font-size: 1.61em;
     }
 }
 
