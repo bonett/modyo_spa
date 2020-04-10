@@ -36,61 +36,10 @@
     width: 100%;
 }
 
-/* Card Avatar */
-
-.card__avatar {
-    align-items: center;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.7em;
-    justify-content: center;
-    margin-left: 10px;
-}
-
-.card__avatar--icon {
-    height: 40px;
-    width: 40px;
-}
-
-.card__avatar--face {
-    height: 64px;
-    width: 64px;
-}
-
-.card__avatar--circle {
-    border-radius: 40px;
-    box-shadow: 0 0 5px rgba(0, 223, 192, 0.6);
-}
-
-/* Card Naming */
-
-.card__naming {
-    margin: 0 8px;
-    padding: 0 8px;
-    width: 100%;
-}
-
-.card__founder {
-    font-size: 1.12em;
-    font-weight: 800;
-    text-transform: capitalize;
-    margin-top: 18px;
-}
-
-.card__company {
-    font-size: 1.1em;
-    font-weight: 400;
-}
-
 /* Card Content */
 
 .card__content {
     width: 100%;
-}
-
-.card__blockquote {
-    padding: 12px;
 }
 
 /* Card Footer */

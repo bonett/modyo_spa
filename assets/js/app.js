@@ -58,7 +58,7 @@ const createSliders = (parent) => {
         (index === 0) ? child.setAttribute('class', 'carousel__item item active') : child.setAttribute('class', 'carousel__item item ');
 
         media.setAttribute('src', `./assets/img/person_${index + 1}.jpg`);
-        media.setAttribute('class', 'avatar__testimonial avatar--face');
+        media.setAttribute('class', 'avatar__testimonial avatar--picture');
         caption.setAttribute('class', 'carousel-caption');
         description.setAttribute('class', 'caption__text text--paragraph');
         name.setAttribute('class', 'caption__name text--dark');
