@@ -9,6 +9,7 @@
 /***********************************
     Basic Elements
 ************************************/
+
 html {
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -131,6 +132,37 @@ textarea:-moz-placeholder {
     font-weight: 400;
 }
 
+.go__top {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    display: none;
+    border: none;
+    border-radius: 50%;
+    bottom: 20px;
+    font-size: 1.4em;
+    opacity: 0.2;
+    outline: none;
+    padding: 15px 18px;
+    position: fixed;
+    right: 30px;
+    transition: 0.5s all ease;
+    z-index: 99;
+}
+
+.go__top:hover {
+    background-color: #00d2b5;
+    color: white;
+    opacity: 1;
+}
+
+.text-help {
+    color: #ef3f3f;
+    font-size: 0.9em;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
 /***********************************
     Section Layout
 ************************************/
@@ -213,16 +245,28 @@ section {
     margin: 0 7px;
 }
 
-.navigation__item--selected {
-    color: #00d2b5;
-}
-
 .navbar-toggle {
     border-color: #fff;
 }
 
 .navbar-toggle .icon-bar {
     background-color: #000000 !important;
+}
+
+.navbar--fixed {
+    background-color: #ffffff;
+    left:0;
+    position: sticky;
+    transition: 0.1s all ease;
+	top:0;
+    width:100%;
+	z-index:100;
+}
+
+/* Scroll__spy Documentation - https://github.com/cferdinandi/gumshoe */
+
+#scroll__spy li.active a {
+	color: #00d2b5;
 }
 
 /***********************************
