@@ -26,9 +26,10 @@
     <link rel="stylesheet" href="./assets/css/global.css">
 </head>
 
-<body>
+<body id="top">
+
     <!-- Navigation -->
-    <nav class="navbar navigation">
+    <nav class="navbar navigation" id="navigation">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-9 col-md-offset-2 col-lg-8 col-lg-offset-3">
@@ -45,25 +46,32 @@
                         </div>
                     </div>
                     <div class="collapse navbar-collapse navigation__content row" id="menu">
-                        <ul class="nav navbar-nav navbar-right navigation__list">
-                            <li>
-                                <a class="navigation__item navigation__item--separator text--dark">Home</a>
+                        <ul class="nav navbar-nav navbar-right navigation__list" id="scroll__spy">
+                            <li class="active">
+                                <a class="navigation__item navigation__item--separator text--dark"
+                                    data-toggle="collapse" data-target=".navbar-collapse" href="#top">Home</a>
                             </li>
                             <li>
-                                <a class="navigation__item navigation__item--separator text--dark">Features</a>
+                                <a class="navigation__item navigation__item--separator text--dark"
+                                    data-toggle="collapse" data-target=".navbar-collapse" href="#feature">Features</a>
                             </li>
                             <li>
-                                <a class="navigation__item navigation__item--separator text--dark">About Us</a>
+                                <a class="navigation__item navigation__item--separator text--dark"
+                                    data-toggle="collapse" data-target=".navbar-collapse" href="#about">About
+                                    Us</a>
                             </li>
                             <li>
-                                <a class="navigation__item navigation__item--separator text--dark">Testimonials</a>
+                                <a class="navigation__item navigation__item--separator text--dark"
+                                    data-toggle="collapse" data-target=".navbar-collapse"
+                                    href="#testimonial">Testimonials</a>
                             </li>
                             <li>
-                                <a class="navigation__item navigation__item--separator text--dark">Blog</a>
+                                <a class="navigation__item navigation__item--separator text--dark"
+                                    data-toggle="collapse" data-target=".navbar-collapse" href="#contact">Blog</a>
                             </li>
                             <li>
-                                <a
-                                    class="navigation__item navigation__item--separator text--dark navigation__item--selected">Contact</a>
+                                <a class="navigation__item navigation__item--separator text--dark"
+                                    data-toggle="collapse" data-target=".navbar-collapse" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -88,7 +96,9 @@
                     <p class="header__description text--paragraph ">Lorem ipsum, dolor sit amet consectetur
                         adipisicing elit. Laboriosam
                         assumenda ea quo cupiditate facere deleniti fuga officia.</p>
-                    <a class="header__button button button--primary">get started</a>
+                    <div class="header__button">
+                        <a class="button button--primary" href="#feature">get started</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,7 +127,7 @@
                                 eligendi at.</p>
                         </div>
                         <div class="card__footer">
-                            <a class="feature__button button button--secondary">Learn more</a>
+                            <a class="feature__button button button--secondary" href="#advantage">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +148,7 @@
                                 eligendi at.</p>
                         </div>
                         <div class="card__footer">
-                            <a class="feature__button button button--secondary">Learn more</a>
+                            <a class="feature__button button button--secondary" href="#advantage">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -160,7 +170,7 @@
                                 eligendi at.</p>
                         </div>
                         <div class="card__footer">
-                            <a class="feature__button button button--secondary">Learn more</a>
+                            <a class="feature__button button button--secondary" href="#advantage">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +191,7 @@
                                 eligendi at.</p>
                         </div>
                         <div class="card__footer">
-                            <a class="feature__button button button--secondary">Learn more</a>
+                            <a class="feature__button button button--secondary" href="#advantage">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -202,7 +212,7 @@
                                 eligendi at.</p>
                         </div>
                         <div class="card__footer">
-                            <a class="feature__button button button--secondary">Learn more</a>
+                            <a class="feature__button button button--secondary" href="#advantage">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -223,7 +233,7 @@
                                 eligendi at.</p>
                         </div>
                         <div class="card__footer">
-                            <a class="feature__button button button--secondary">Learn more</a>
+                            <a class="feature__button button button--secondary" href="#advantage">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -301,7 +311,7 @@
                             delectus! At maiores, itaque.
                         </p>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about__button">
-                            <a class="button button--primary">Learn more</a>
+                            <a class="button button--primary" href="#testimonial">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -332,30 +342,30 @@
             <div class="contact__content row">
                 <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 contact__column">
                     <div class="card contact__card background--primary">
-                        <form>
+                        <form” id="contactForm">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form__heading">
                                     <h3>Contact Form</h3>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
                                     <label for="firstname">First Name</label>
-                                    <input type="text" class="form-control" id="firstname">
+                                    <input type="text" class="form-control" id="firstname" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
                                     <label for="lastname">Last Name</label>
-                                    <input type="text" class="form-control" id="lastname">
+                                    <input type="text" class="form-control" id="lastname" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email">
+                                    <input type="email" class="form-control" id="email" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
                                     <label for="subject">Subject</label>
-                                    <input type="text" class="form-control" id="subject">
+                                    <input type="text" class="form-control" id="subject" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
                                     <label for="subject">Message</label>
-                                    <textarea type="text" class="form-control" rows="9" id="subject"
+                                    <textarea type="text" class="form-control" rows="9" id="subject" required
                                         placeholder="Write your notes or questions here..."></textarea>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
@@ -363,7 +373,7 @@
                                         Message</button>
                                 </div>
                             </div>
-                        </form>
+                            </form>
                     </div>
                 </div>
             </div>
@@ -381,11 +391,18 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- all your content here -->
+    <a id="backTo" class="go__top" href="#top"><i class="icon-chevron-up"></i></a>
+
     <!-- Scripts -->
     <script src="./assets/js/jquery-2.2.4.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/axios.min.js"></script>
     <script src="./assets/js/lodash.min.js"></script>
+    <script src="./assets/js/custom-validations.js"></script>
+    <script src="./assets/js/pristine.min.js"></script>
+    <script src="./assets/js/gumshoe.scroll.spy.min.js"></script>
+    <script src="./assets/js/effects.js"></script>
     <script src="./assets/js/app.js"></script>
     <!-- End Scripts -->
 </body>
