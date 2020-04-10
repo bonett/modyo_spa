@@ -1,0 +1,49 @@
+/***********************************
+    Card Css
+************************************/
+
+/* Card General */
+
+.card {
+    border-radius: 4px;
+    box-shadow: 0 0 6px #f5f5f5;
+    padding: 30px 20px;
+}
+
+.card--column {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card--row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.card--border {
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 14px #f2f2f2;
+}
+
+/* Card Header */
+
+.card__header {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+/* Card Content */
+
+.card__content {
+    width: 100%;
+}
+
+/* Card Footer */
+
+.card__footer {
+    width: 100%;
+}

@@ -1,0 +1,312 @@
+/***********************************
+    Extra small devices - For example an Iphone 4
+************************************/
+
+@media (min-width: 316px) {
+    .navigation__content {
+        padding-left: 0;
+    }
+
+    .navigation {
+        border: none;
+        box-shadow: 0 0 0 transparent;
+    }
+
+    .header__media {
+        height: 230px;
+        margin: 0;
+    }
+
+    .header__content {
+        margin: 0 0 40px 0;
+        padding: 0 0 40px 0;
+    }
+
+    .header__image {
+        left: 0;
+        position: relative;
+        top: 0;
+        z-index: 4;
+    }
+
+    .header__welcoming {
+        margin: 12px 0;
+    }
+
+    .header__title {
+        font-size: 1.8em;
+    }
+
+    .header__description {
+        font-size: 0.9em;
+    }
+
+    .feature__item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .advantage__column:nth-child(1) {
+        height: 400px;
+    }
+
+    .advantage__column:nth-child(2) {
+        padding: 10px;
+    }
+
+    .advantage__title {
+        font-size: 2.8em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .advantage__guarantees {
+        padding: 4px 20px;
+    }
+
+    .advantage__founder {
+        margin: 19px 0;
+        padding: 20px 10px;
+    }
+
+    .about__column:nth-child(2) {
+        padding: 20px 0;
+    }
+
+    .about__title {
+        padding: 10px 0;
+    }
+
+    .about__description {
+        padding: 10px 0;
+    }
+
+    .about__button {
+        margin-top: 30px;
+        padding-left: 0;
+    }
+
+    .contact__column {
+        padding: 0 10px;
+    }
+
+    .contact__card {
+        padding: 30px 0 50px 0 !important;
+    }
+}
+
+/***********************************
+    small devices - Form example an Iphone 5
+    or any mobiles that your with is 375px
+************************************/
+
+@media (min-width: 321px) {
+    .header__title {
+        font-size: 2em;
+    }
+
+    .header__description {
+        font-size: 1.1em;
+    }
+}
+
+/***********************************
+    small devices - Form example tablets
+************************************/
+
+@media (min-width: 576px) {
+    .navigation__content {
+        padding-left: 0;
+    }
+
+    .navigation {
+        border: none;
+        box-shadow: 0 0 0 transparent;
+    }
+
+    .header__media {
+        height: 340px;
+        margin: 0 0 40px 0;
+    }
+
+    .header__image {
+        left: 0;
+        position: relative;
+        top: 0;
+        z-index: 4;
+    }
+
+    .header__welcoming {
+        margin: 45px 0 0 0;
+    }
+
+    .header__title {
+        font-size: 3.7em;
+    }
+
+    .advantage__column:nth-child(1) {
+        height: 580px;
+    }
+}
+
+/***********************************
+    small devices - Form example an Ipad
+************************************/
+
+@media (min-width: 768px) {
+
+    .navigation__content {
+        padding-left: 46px;
+    }
+
+    .navigation {
+        border: none;
+        box-shadow: 0 0 8px #efefef;
+    }
+
+    .header__content {
+        margin: 40px 0 0 0;
+        padding: 40px 0 0 0;
+    }
+
+    .header__welcoming {
+        height: 360px;
+        margin: 0;
+    }
+
+    .header__title {
+        font-size: 2.95em;
+    }
+
+    .header__description {
+        font-size: 1.1em;
+    }
+
+    .feature__item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/***********************************
+    Medium devices - Form example an Ipad (landscape)
+    or Desktop with screen 1024px
+************************************/
+
+@media (min-width: 992px) {
+
+    .navigation__content {
+        padding-left: 14px;
+    }
+
+    .navigation {
+        border: 1px solid #fbfbfb;
+    }
+
+    .header::after {
+        height: 654px;
+        top: 188px;
+        width: 710px;
+    }
+
+    .header__content {
+        margin: 20px 4px;
+        padding: 20px 0;
+    }
+
+    .header__welcoming {
+        height: 750px;
+    }
+
+    .header__title {
+        font-size: 3.9em;
+    }
+
+    .advantage__column:nth-child(2) {
+        padding: 20px 10px 10px 30px;
+    }
+
+    .advantage__title {
+        font-size: 2.4em;
+        text-align: left;
+    }
+
+    .advantage__founder {
+        margin: 18px 0;
+        padding: 20px 0 0 20px;
+    }
+
+    .advantage__guarantees {
+        padding: 0 20px 0 28px;
+    }
+
+    .about__column:nth-child(2) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about__title {
+        padding: 6px 10px 12px 20px;
+    }
+
+    .about__description {
+        padding: 10px 15px 10px 20px;
+    }
+
+    .about__button {
+        padding-left: 15px;
+        margin-top: 30px;
+    }
+
+    .contact__column {
+        padding: 0 64px;
+    }
+
+    .contact__card {
+        padding: 30px 20px 50px 20px  !important;
+    }
+}
+
+/***********************************
+    Larga devices- Form example an Desktop
+************************************/
+
+@media (min-width: 1200px) {
+    .header::after {
+        top: 200px;
+        width: 740px;
+    }
+
+    .advantage__title {
+        font-size: 2.8em;
+    }
+}
+
+/***********************************
+    Larga devices- Form example an Desktop (Retina)
+************************************/
+
+@media (min-width: 1400px) {
+    .header::after {
+        height: 654px;
+        top: 200px;
+        width: 815px;
+    }
+}
+
+/***********************************
+    Extra larga devices- Form example an Desktop (Retina) > 1600
+************************************/
+
+@media (min-width: 1600px) {
+    .header::after {
+        height: 654px;
+        top: 185px;
+        width: 860px;
+    }
+
+    .header__content {
+        margin: 20px 4px 40px 4px;
+        padding: 20px 0 40px 0;
+    }
+}

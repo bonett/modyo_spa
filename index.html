@@ -2,25 +2,392 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Landerz.</title>
-        <meta name="author" content="Wilfrido Bonett Paez">
-        <meta name="description" content="Single page application with Html5, Css, Vanilla and Bootstrap.">
-        <meta name="keywords" content="landerz, javascript, vanilla, spa, modyo, financial">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-        <!-- Montserrat by Google Font -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
-        <!-- Global.Css -->
-        <link rel="stylesheet" href="./assets/css/global.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <script src="./assets/js/app.js"></script>
-    </body>
+<head>
+    <!-- Meta Tags - Information -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Landerz. | Single page application, test by Modyo,CH</title>
+    <meta name="author" content="Wilfrido Bonett Paez">
+    <meta name="description" content="Single page application with Html5, Css, Vanilla and Bootstrap.">
+    <meta name="keywords" content="landerz, javascript, vanilla, spa, modyo, financial">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Montserrat by Google Font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
+
+    <!-- Import Css -->
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-md-offset-2 col-lg-8 col-lg-offset-3">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="brand__mobile">
+                            <a class="brand__text text--dark hidden-sm hidden-md hidden-lg">Landerz<span>.</span></a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse navigation__content row" id="menu">
+                        <ul class="nav navbar-nav navbar-right navigation__list">
+                            <li>
+                                <a class="navigation__item navigation__item--separator text--dark">Home</a>
+                            </li>
+                            <li>
+                                <a class="navigation__item navigation__item--separator text--dark">Features</a>
+                            </li>
+                            <li>
+                                <a class="navigation__item navigation__item--separator text--dark">About Us</a>
+                            </li>
+                            <li>
+                                <a class="navigation__item navigation__item--separator text--dark">Testimonials</a>
+                            </li>
+                            <li>
+                                <a class="navigation__item navigation__item--separator text--dark">Blog</a>
+                            </li>
+                            <li>
+                                <a
+                                    class="navigation__item navigation__item--separator text--dark navigation__item--selected">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="brand__content hidden-xs">
+                <h2 class="brand__text text--dark">Landerz<span>.</span></h2>
+            </div>
+            <div class="header__content row">
+                <div class="col-xs-12 col-sm-12 hidden-md hidden-lg header__mobile">
+                    <img class="header__image img-responsive" src="./assets/img/landing_1.png">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 header__welcoming">
+                    <h1 class="header__title text--dark">grow your business faster</h1>
+                    <p class="header__description text--paragraph ">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Laboriosam
+                        assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+                    <a class="header__button button button--primary">get started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Features Section -->
+    <section id="feature" class="feature background--secondary">
+        <div class="container">
+            <div class="section__heading">
+                <h2 class="section__title text--dark">Features</h2>
+            </div>
+            <div class="feature__content row">
+                <!-- Item -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
+                    <div class="card card--column background--primary">
+                        <div class="card__header">
+                            <div class="avatar__content avatar--icon background--tertiary">
+                                <i class="icon-sync"></i>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <h5 class="feature__title text--dark">Business Consulting</h5>
+                            <p class="feature__description text--paragraph">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.</p>
+                        </div>
+                        <div class="card__footer">
+                            <a class="feature__button button button--secondary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
+                    <div class="card card--column background--primary">
+                        <div class="card__header">
+                            <div class="avatar__content avatar--icon background--tertiary">
+                                <i class="icon-store_mall_directory"></i>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <h5 class="feature__title text--dark">Market Analysis</h5>
+                            <p class="feature__description text--paragraph">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.</p>
+                        </div>
+                        <div class="card__footer">
+                            <a class="feature__button button button--secondary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+
+                <!-- Item -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
+                    <div class="card card--column background--primary">
+                        <div class="card__header">
+                            <div class="avatar__content avatar--icon background--tertiary">
+                                <i class="icon-shopping_basket"></i>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <h5 class="feature__title text--dark">User Monitoring</h5>
+                            <p class="feature__description text--paragraph">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.</p>
+                        </div>
+                        <div class="card__footer">
+                            <a class="feature__button button button--secondary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
+                    <div class="card card--column background--primary">
+                        <div class="card__header">
+                            <div class="avatar__content avatar--icon background--tertiary">
+                                <i class="icon-history"></i>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <h5 class="feature__title text--dark">Insurance Consulting</h5>
+                            <p class="feature__description text--paragraph">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.</p>
+                        </div>
+                        <div class="card__footer">
+                            <a class="feature__button button button--secondary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
+                    <div class="card card--column background--primary">
+                        <div class="card__header">
+                            <div class="avatar__content avatar--icon background--tertiary">
+                                <i class="icon-smile-o"></i>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <h5 class="feature__title text--dark">Customer Satistified</h5>
+                            <p class="feature__description text--paragraph">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.</p>
+                        </div>
+                        <div class="card__footer">
+                            <a class="feature__button button button--secondary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 feature__item">
+                    <div class="card card--column background--primary">
+                        <div class="card__header">
+                            <div class="avatar__content avatar--icon background--tertiary">
+                                <i class="icon-plug"></i>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <h5 class="feature__title text--dark">Plug & Play</h5>
+                            <p class="feature__description text--paragraph">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Perferendis quis molestiae vitae
+                                eligendi at.</p>
+                        </div>
+                        <div class="card__footer">
+                            <a class="feature__button button button--secondary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+            </div>
+        </div>
+    </section>
+    <!-- End Features Section -->
+
+    <!-- Advantage Section -->
+    <section id="advantage" class="advantage background--primary">
+        <div class="container">
+            <div class="advantage__content row">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 advantage__column">
+                    <h1 class="advantage__title text--dark hidden-md hidden-lg">Create interactive prototypes</h1>
+                    <img class="img-responsive" src="./assets/img/do_ui_kit_download_cta_floating_devices-2x.png">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 advantage__column">
+                    <div class="advantage__heading">
+                        <h1 class="advantage__title text--dark hidden-xs hidden-sm">Create interactive
+                            prototypes</h1>
+                        <p class="advantage__description text--paragraph">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Voluptatem neque nisi architecto
+                            autem molestias corrupti officia veniam.</p>
+                    </div>
+                    <div class="advantage__guarantees">
+                        <ul class="list">
+                            <li class="list__item text--paragraph">Adipisci excepturi aliquam</li>
+                            <li class="list__item text--paragraphr">Deleniti labore reiciendis</li>
+                        </ul>
+                    </div>
+                    <div class="advantage__founder">
+                        <div class="card advantage__card card--border">
+                            <div class="card__header card--row">
+                                <div class="avatar__content avatar--face">
+                                    <img class="img-responsive img-circle" src="./assets/img/person_1.jpg">
+                                </div>
+                                <div class="founder__content">
+                                    <h4 class="founder__name text--dark">Amalia g.</h4>
+                                    <h4 class="founder__company text--dark">Co-Founder, XYZ inc.</h4>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <div class="blockquote__content">
+                                    <p class="blockquote__paragraph text--paragraph">"Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Ducimus vitae ipsa
+                                        asperiores inventore aperiam iure?"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Advantage Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about background--secondary">
+        <div class="container">
+            <div class="section__heading">
+                <h2 class="section__title text--dark">About Us</h2>
+            </div>
+            <div class="about__content row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about__column">
+                    <img class="img-responsive about__image" src="./assets/img/about_1.jpg">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about__column">
+                    <div class="col-md-11 col-md-offset-2">
+                        <h3 class="about__title">Create interactive prototypes</h3>
+                        <p class="about__description text--paragraph">
+                            Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam ommis
+                            consectetur
+                            maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam
+                            delectus! At maiores, itaque.
+                        </p>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about__button">
+                            <a class="button button--primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonial" class="testimonial background--primary">
+        <div class="container">
+            <div class="section__heading">
+                <h2 class="section__title text--dark">Testimonials</h2>
+            </div>
+            <div class="testimonial__content row">
+                <div id="carousel-default" class="carousel slide" data-ride="carousel"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- Get In Touch Section -->
+    <section id="contact" class="contact background--secondary">
+        <div class="container">
+            <div class="section__heading">
+                <h2 class="section__title text--dark">Get in touch</h2>
+            </div>
+            <div class="contact__content row">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 contact__column">
+                    <div class="card contact__card background--primary">
+                        <form>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form__heading">
+                                    <h3>Contact Form</h3>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" class="form-control" id="firstname">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" class="form-control" id="lastname">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
+                                    <label for="subject">Message</label>
+                                    <textarea type="text" class="form-control" rows="9" id="subject"
+                                        placeholder="Write your notes or questions here..."></textarea>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
+                                    <button type="submit" class="button button--primary" disabled="disabled">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Get In Touch Section -->
+
+    <!-- Footer -->
+    <footer class="background--primary border--top">
+        <div class="container">
+            <div class="footer__content">
+                <h5 class="footer__copyright text--paragraph">Copyright ©2019 All rights reserved</h5>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="./assets/js/jquery-2.2.4.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/axios.min.js"></script>
+    <script src="./assets/js/lodash.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <!-- End Scripts -->
+</body>
+
 </html>

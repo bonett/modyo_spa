@@ -1,0 +1,36 @@
+/***********************************
+    Slider Css
+************************************/
+
+.carousel__item {
+    height: 380px;
+    margin: 60px 0 20px 0;
+    padding: 0;
+    width: 100%;
+}
+
+.carousel-indicators .active {
+    background-color: #00d2b5 !important;
+}
+
+.carousel-indicators li {
+    background-color: #e4e4e4 !important;
+    height: 12px !important;
+    width: 12px !important;
+}
+
+.carousel-caption {
+    text-shadow: none;
+}
+
+.caption__text {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.caption__name {
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
