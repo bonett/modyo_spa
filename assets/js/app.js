@@ -80,8 +80,6 @@ const createSliders = (parent, sourceData) => {
  * 
  * @param {collection1} Array
  * @param {collection2} Array
- * @param {param1} string
- * @param {param2} string
  * @return Array 
  * 
  */

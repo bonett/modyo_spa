@@ -87,7 +87,11 @@
     }
 
     .carousel__item {
-        height: 420px;
+        height: 380px;
+    }
+
+    .carousel-caption {
+        top: 120px;
     }
 
     .caption__text {
@@ -114,14 +118,6 @@
     }
 
     .header__description {
-        font-size: 1.1em;
-    }
-
-    .carousel__item {
-        height: 450px;
-    }
-
-    .caption__text {
         font-size: 1.1em;
     }
 }
@@ -162,10 +158,6 @@
 
     .advantage__column:nth-child(1) {
         height: 580px;
-    }
-
-    .carousel__item {
-        height: 420px;
     }
 
     .caption__text {
@@ -211,12 +203,8 @@
         padding-right: 15px;
     }
 
-    .carousel__item {
-        height: 380px;
-    }
-
     .caption__text {
-        font-size: 1.1em;
+        font-size: 1.33em;
     }
 }
 
@@ -290,10 +278,6 @@
         margin-top: 30px;
     }
 
-    .carousel__item {
-        height: 380px;
-    }
-
     .caption__text {
         font-size: 1.3em;
     }
@@ -322,7 +306,7 @@
     }
 
     .caption__text {
-        font-size: 1.5em;
+        font-size: 1.61em;
     }
 }
 
