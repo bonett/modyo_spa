@@ -1,22 +1,21 @@
 const BASE_URL = 'https://jsonplaceholder.typicode.com',
-   defaultText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugait repudiandae explicabo animi minima fuga beatae ilum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.',
-   defaultName = ['Andrea Dimitri', 'Alejandro Saldarriaga', 'Jhon Smith', 'Juan Gomez'],
     itemNumber = 4; // testimonial items to render on screen
 
 /**
  *  It should create slider indicatos
  * 
  * @param {parent} Html
+ * @param {sourceData} Array
  * @returns null
  * 
  */
-const createIndicators = (parent) => {
+const createIndicators = (parent, sourceData) => {
 
     const ol = document.createElement('ol');
 
     ol.setAttribute('class', 'carousel-indicators');
 
-    for (let index = 0; index < itemNumber; index++) {
+    for (let index = 0; index < sourceData.length; index++) {
 
         const li = document.createElement('li');
 
@@ -37,17 +36,18 @@ const createIndicators = (parent) => {
  *  It should create a certain number of slider with testimonial data
  * 
  * @param {parent} Html
+ * @param {sourceData} Array
  * @returns null
  * 
  */
-const createSliders = (parent) => {
+const createSliders = (parent, sourceData) => {
 
     const content = document.createElement('div');
 
     content.setAttribute('class', 'carousel-inner carousel__content');
     content.setAttribute('role', 'listbox');
-
-    for (let index = 0; index < itemNumber; index++) {
+    
+    for (let index = 0; index < sourceData.length; index++) {
 
         const child = document.createElement('div'),
               media = document.createElement('img'),
@@ -63,8 +63,8 @@ const createSliders = (parent) => {
         description.setAttribute('class', 'caption__text text--paragraph');
         name.setAttribute('class', 'caption__name text--dark');
 
-        name.textContent = defaultName[index];
-        description.textContent = defaultText;
+        name.textContent = sourceData[index].name;
+        description.textContent = sourceData[index].body;
         caption.appendChild(description);
         caption.appendChild(name);
         child.append(caption);
@@ -85,10 +85,10 @@ const createSliders = (parent) => {
  * @return Array 
  * 
  */
-const handlerReduceList = (collection1, collection2, param1, param2) => {
-    return collection1.map(a => ({
-        ...collection2.find((b) => (b[param1] === a[param2]) && b),
-        ...a
+const handlerReduceList = (collection1, collection2) => {
+    return collection1.map(o => ({
+        ...collection2.find((x) => (x.id === o.userId) && x),
+        ...o
     }));
 }
 
@@ -103,12 +103,12 @@ const addTestimonialToDOM = (postList, userList) => {
 
     const parent = document.getElementById('carousel-default');
 
-    let testimonials = handlerReduceList(postList, userList, 'userId', 'id');
+    let testimonials = handlerReduceList(postList, userList);
 
     testimonials = _.sampleSize(testimonials, itemNumber); // It should take 5 positions (Randomly) - Lodash
-
-    createIndicators(parent);
-    createSliders(parent);
+    
+    createIndicators(parent, testimonials);
+    createSliders(parent, testimonials);
 }
 
 /**
