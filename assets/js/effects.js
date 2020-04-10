@@ -24,7 +24,6 @@ const scrollFunction = () => {
  */
 const effectScroll = () => {
     new Gumshoe('#scroll__spy a');
-    new SmoothScroll('a[href*="#"]');
 }
 
 /**
