@@ -131,6 +131,30 @@ textarea:-moz-placeholder {
     font-weight: 400;
 }
 
+.go__top {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    display: none;
+    border: none;
+    border-radius: 50%;
+    bottom: 20px;
+    font-size: 1.4em;
+    opacity: 0.2;
+    outline: none;
+    padding: 15px 18px;
+    position: fixed;
+    right: 30px;
+    transition: 0.5s all ease;
+    z-index: 99;
+  }
+  
+  .go__top:hover {
+    background-color: #00d2b5;
+    color: white;
+    opacity: 1;
+  }
+
 /***********************************
     Section Layout
 ************************************/
