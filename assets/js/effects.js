@@ -5,9 +5,16 @@
 const scrollFunction = () => {
 
     const button = document.getElementById("backTo");
+    const navbar = document.getElementById("navigation");
 
     window.onscroll = () => {
-        (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? button.style.display = "block" : button.style.display = "none";
+        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+            button.style.display = "block"
+            navbar.classList.add('navbar--fixed')
+        } else {
+            button.style.display = "none";
+            navbar.classList.remove('navbar--fixed');
+        }
     };
 }
 
@@ -16,6 +23,7 @@ const scrollFunction = () => {
  * @returns null
  */
 const effectScroll = () => {
+    new Gumshoe('#scroll__spy a');
     new SmoothScroll('a[href*="#"]');
 }
 

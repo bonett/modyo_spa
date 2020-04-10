@@ -27,8 +27,9 @@
 </head>
 
 <body id="top">
-    <!-- Navigation -->
-    <nav class="navbar navigation">
+
+    <!-- Navigation -->    
+    <nav class="navbar navigation" id="navigation">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-9 col-md-offset-2 col-lg-8 col-lg-offset-3">
@@ -45,9 +46,10 @@
                         </div>
                     </div>
                     <div class="collapse navbar-collapse navigation__content row" id="menu">
-                        <ul class="nav navbar-nav navbar-right navigation__list">
-                            <li>
-                                <a class="navigation__item navigation__item--separator text--dark" href="#top">Home</a>
+                        <ul class="nav navbar-nav navbar-right navigation__list" id="scroll__spy">
+                            <li class="active">
+                                <a class="navigation__item navigation__item--separator text--dark"
+                                    href="#top">Home</a>
                             </li>
                             <li>
                                 <a class="navigation__item navigation__item--separator text--dark"
@@ -66,7 +68,7 @@
                                     href="#contact">Blog</a>
                             </li>
                             <li>
-                                <a class="navigation__item navigation__item--separator text--dark navigation__item--selected"
+                                <a class="navigation__item navigation__item--separator text--dark"
                                     href="#contact">Contact</a>
                             </li>
                         </ul>
@@ -369,7 +371,7 @@
                                         Message</button>
                                 </div>
                             </div>
-                        </form>
+                            </form>
                     </div>
                 </div>
             </div>
@@ -387,7 +389,7 @@
     </footer>
     <!-- End Footer -->
 
-    <!-- all your content here --> 
+    <!-- all your content here -->
     <a id="backTo" class="go__top" href="#top"><i class="icon-chevron-up"></i></a>
 
     <!-- Scripts -->
@@ -398,6 +400,7 @@
     <script src="./assets/js/lodash.min.js"></script>
     <script src="./assets/js/custom-validations.js"></script>
     <script src="./assets/js/pristine.min.js"></script>
+    <script src="./assets/js/gumshoe.scroll.spy.min.js"></script>
     <script src="./assets/js/effects.js"></script>
     <script src="./assets/js/app.js"></script>
     <!-- End Scripts -->

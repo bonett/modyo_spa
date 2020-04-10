@@ -245,16 +245,28 @@ section {
     margin: 0 7px;
 }
 
-.navigation__item--selected {
-    color: #00d2b5;
-}
-
 .navbar-toggle {
     border-color: #fff;
 }
 
 .navbar-toggle .icon-bar {
     background-color: #000000 !important;
+}
+
+.navbar--fixed {
+    background-color: #ffffff;
+    left:0;
+    position: sticky;
+    transition: 0.1s all ease;
+	top:0;
+    width:100%;
+	z-index:100;
+}
+
+/* Scroll__spy Documentation - https://github.com/cferdinandi/gumshoe */
+
+#scroll__spy li.active a {
+	color: #00d2b5;
 }
 
 /***********************************
