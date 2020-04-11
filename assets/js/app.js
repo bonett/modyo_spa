@@ -173,6 +173,4 @@ const main = async () => {
     addTestimonialToDOM(await getPosts(), await getUsers());
 };
 
-window.onload = () => {
-    main();
-}
+window.onload(main());
