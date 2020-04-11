@@ -11,8 +11,6 @@ function customInputValidation() {
             return element.nodeName === 'INPUT';
         });
 
-    // Loop through the inputs to be validated
-
     for (index = 0; index < inputs.length; index++) {
         const input = inputs[index];
         console.log(input.value, input.value.length);
