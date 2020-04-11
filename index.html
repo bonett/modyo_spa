@@ -349,27 +349,27 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
                                     <label for="firstname">First Name</label>
-                                    <input type="text" class="form-control" id="firstname" required>
+                                    <input type="text" class="form-control validate" id="firstname" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
                                     <label for="lastname">Last Name</label>
-                                    <input type="text" class="form-control" id="lastname" required>
+                                    <input type="text" class="form-control validate" id="lastname" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" required>
+                                    <input type="email" class="form-control validate" id="email" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
                                     <label for="subject">Subject</label>
-                                    <input type="text" class="form-control" id="subject" required>
+                                    <input type="text" class="form-control validate" id="subject" required>
                                 </div>
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group validate">
                                     <label for="subject">Message</label>
-                                    <textarea type="text" class="form-control" rows="9" id="subject" required
+                                    <textarea type="text" class="form-control" rows="9" id="message"
                                         placeholder="Write your notes or questions here..."></textarea>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
-                                    <button type="submit" class="button button--primary" disabled="disabled">Send
+                                    <button class="button button--primary" onclick="customInputValidation()">Send
                                         Message</button>
                                 </div>
                             </div>
@@ -400,7 +400,6 @@
     <script src="./assets/js/axios.min.js"></script>
     <script src="./assets/js/lodash.min.js"></script>
     <script src="./assets/js/custom-validations.js"></script>
-    <script src="./assets/js/pristine.min.js"></script>
     <script src="./assets/js/gumshoe.scroll.spy.min.js"></script>
     <script src="./assets/js/effects.js"></script>
     <script src="./assets/js/app.js"></script>

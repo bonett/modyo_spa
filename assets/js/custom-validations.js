@@ -1,32 +1,38 @@
 
 /**
  *  It allows validate input form
- * @returns null
  */
-const customInputValidation = () => {
+function customInputValidation() {
 
-    window.onload = () => {
+    const validateElements = document.getElementsByClassName("validate");
 
-        const form = document.getElementById("contactForm");
-
-        const pristine = new Pristine(form);
-
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            var valid = pristine.validate(); // returns true or false
-
+    const inputs = Array.prototype.filter.call(validateElements,
+        (element) => {
+            return element.nodeName === 'INPUT';
         });
-    };
-}
 
-/**
- *  It should initialize validations
- */
-const mainValidations = () => {
-    customInputValidation();
-};
+    for (index = 0; index < inputs.length; index++) {
+        const input = inputs[index];
+        console.log(input.value, input.value.length);
 
-window.onload = () => {
-    mainValidations();
+        if (input.value.length < 1 && input.id === 'firstname') {
+            input.placeholder = "Enter value fisrtname";
+            input.classList.add("input--error");
+        }
+
+        if (input.value.length < 1 && input.id === 'lastname') {
+            input.placeholder = "Enter value lastname";
+            input.classList.add("input--error");
+        }
+
+        if (input.value.length < 1 && input.id === 'email') {
+            input.placeholder = "Enter value email";
+            input.classList.add("input--error");
+        }
+
+        if (input.value.length < 1 && input.id === 'subject') {
+            input.placeholder = "Enter value subject";
+            input.classList.add("input--error");
+        }
+    }
 }
