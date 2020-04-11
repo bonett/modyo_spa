@@ -24,7 +24,7 @@ It's a single page application based on Html5. Vanilla Js, Css.
 
 - Lodash, (https://lodash.com/).
 
-- Form validation based on (http://pristine.js.org/).
+- Form validation.
 
 - Response design.
 

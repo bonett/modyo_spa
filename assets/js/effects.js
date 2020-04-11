@@ -1,6 +1,5 @@
 /**
  *  It allows the animation of the SmoothScroll
- * @returns null
  */
 const scrollFunction = () => {
 
@@ -20,7 +19,6 @@ const scrollFunction = () => {
 
 /**
  *  It allows the animation of the SmoothScroll
- * @returns null
  */
 const effectScroll = () => {
     new Gumshoe('#scroll__spy a');
@@ -29,9 +27,9 @@ const effectScroll = () => {
 /**
  *  It should initialize effects
  */
-const mainEffects = () => {
+function mainEffects() {
     effectScroll();
     scrollFunction();
 };
 
-mainEffects();
+window.onload(mainEffects());
